@@ -1,0 +1,19 @@
+---
+
+- name: R1
+  hosts: R1
+  gather_facts: false
+  connection: local
+  tasks:
+    - name: ROUTER 1
+	  telnet:
+        user: admin
+		password: password
+		login_prompt: "Username: "
+		prompts:
+          - ' [>|#] '
+        command:
+          - terminal lenght 0
+		  - enable
+		  - config t
+		  - hostname ANSIBLE-1

@@ -1,0 +1,41 @@
+*** show ip int bri 
+ - show designated IPs of devices
+
+*** rm -r /etc/udev/rules.d/70-persistent-net.rule
+   - ginawa sa Clone of RSTallrun during start of logging in root/C1sc0123
+
+*** pag mali sa pag assing or config ng IP
+    > config t
+    > int e0/1 ;;; or kung san mo nalagay na IP
+    > no ip add 10.2.1.102 255.255.255.0
+    > to double check - do a show ip int bri - dapat nawala na ung maling IP na inassign mo
+
+*** "bp" same or shortcut for command na "sh ip int bri"
+
+**** CMD mo type : >nmap -sP 10.11.1.0/24
+**** CMD >nmap -v 10.11.1.10
+
+*** nmap -v www.sti.edu.ph (check open ports)
+
+RED TEAMING (checking vulnerability of your client) = nmap -v www.sti.edu.ph
+
+*** wr - to save configuration
+
+
+**** wr er --- erase config
+
+DAY 5: 
+
+*** show flash --- check flash memory
+
+*** show vlan brief  ------ how to check previous vlan config
+
+*** delete flash:vlan.dat -- delete previous vlan config (delete vlan dat)
+
+*** erase startup-config   --- delete/erase config files
+    wr er - pede dim ito
+
+*** reload ---- command to reboot the switch/ parang restart
+
+**** sh spanning-tree vlan 1 ---- command to show spanning-tree protocol. Boss switch/ROOT/ Designated /ROLES and STATES
+
